@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	Fractal-DLA
-Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) Generator
+Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) generator
 Summary(pl):	Math::Fractal::DLA - generator fraktali DLA
 Name:		perl-Math-Fractal-DLA
 Version:	0.20
