@@ -9,13 +9,13 @@ Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) Generator
 Summary(pl):	Math::Fractal::DLA - generator fraktali DLA
 Name:		perl-Math-Fractal-DLA
 Version:	0.20
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3d645fb1dc29245aaec49a657607aa8
-BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-GD >= 1.27
+BuildRequires:	perl-devel >= 5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -53,7 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_vendorlib}/Math/Fractal
 %{perl_vendorlib}/Math/Fractal/DLA.pm
 %{perl_vendorlib}/Math/Fractal/DLA
 %{_mandir}/man3/*
