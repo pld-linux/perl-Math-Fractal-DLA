@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Fractal-DLA
+%define		pdir	Math
+%define		pnam	Fractal-DLA
 Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) generator
 Summary(pl):	Math::Fractal::DLA - generator fraktali DLA
 Name:		perl-Math-Fractal-DLA
