@@ -9,13 +9,13 @@ Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) Generator
 Summary(pl):	Math::Fractal::DLA - generator fraktali DLA
 Name:		perl-Math-Fractal-DLA
 Version:	0.20
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD >= 1.27
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,8 @@ Limited Aggregation).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -51,9 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_sitelib}/Math/Fractal
-%{perl_sitelib}/Math/Fractal/DLA.pm
-%{perl_sitelib}/Math/Fractal/DLA
+%dir %{perl_vendorlib}/Math/Fractal
+%{perl_vendorlib}/Math/Fractal/DLA.pm
+%{perl_vendorlib}/Math/Fractal/DLA
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
