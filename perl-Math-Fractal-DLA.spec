@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Fractal-DLA
 Summary:	Math::Fractal::DLA - Diffusion Limited Aggregation (DLA) generator
-Summary(pl):	Math::Fractal::DLA - generator fraktali DLA
+Summary(pl.UTF-8):   Math::Fractal::DLA - generator fraktali DLA
 Name:		perl-Math-Fractal-DLA
 Version:	0.20
 Release:	3
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Math::Fractal::DLA is a Diffusion Limited Aggregation (DLA) fractal
 generator.
 
-%description -l pl
-Modu≥ Math::Fractal::DLA jest generatorem fraktali DLA (Diffusion
+%description -l pl.UTF-8
+Modu≈Ç Math::Fractal::DLA jest generatorem fraktali DLA (Diffusion
 Limited Aggregation).
 
 %prep
