@@ -17,6 +17,10 @@ Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.t
 # Source0-md5:	0ed161b97d7ad3834525b1ade02425cd
 URL:		http://search.cpan.org/dist/Math-Fractal-DLA/
 BuildRequires:	perl-GD >= 1.27
+%if %{with tests}
+BuildRequires:	perl-Log-LogLite >= 0.8
+BuildRequires:	perl-Test-Simple >= 0.54
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
